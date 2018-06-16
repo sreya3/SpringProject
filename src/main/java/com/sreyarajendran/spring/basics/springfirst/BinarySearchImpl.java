@@ -2,10 +2,14 @@ package com.sreyarajendran.spring.basics.springfirst;
 
 import org.springframework.stereotype.Component;
 
-@Component
 public class BinarySearchImpl {
 	
 	private SortAlgorithm quickSortAlgorithm;
+	
+	public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+		super();
+		this.quickSortAlgorithm = sortAlgorithm;
+	}
 	
 	public int binarySearch(int[] numbers, int numberToSearchFor) {
 		
